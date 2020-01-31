@@ -410,6 +410,7 @@ function _xmlEncoder(c){
          c == '>' && '&gt;' ||
          c == '&' && '&amp;' ||
          c == '"' && '&quot;' ||
+         c == "'" && '&apos;' ||
          '&#'+c.charCodeAt()+';'
 }
 
